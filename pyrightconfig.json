@@ -1,0 +1,10 @@
+{
+  "venvPath": "/home/ruanzhifeng/anaconda3/envs",
+  "venv": "mmlab",
+  "extraPaths": [
+    "mmpretrain",
+    "mmengine",
+    "mmcv"
+  ],
+  "pythonVersion": "3.11"
+}

@@ -1,0 +1,13 @@
+{
+  "python.defaultInterpreterPath": "/home/ruanzhifeng/anaconda3/envs/mmlab/bin/python",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/mmpretrain",
+    "${workspaceFolder}/mmengine",
+    "${workspaceFolder}/mmcv"
+  ],
+  "cursorpyright.analysis.extraPaths": [
+    "${workspaceFolder}/mmpretrain",
+    "${workspaceFolder}/mmengine",
+    "${workspaceFolder}/mmcv"
+  ]
+}
