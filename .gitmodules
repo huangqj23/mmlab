@@ -1,0 +1,6 @@
+[submodule "mmcv"]
+	path = mmcv
+	url = https://github.com/huangqj23/mmcv.git
+[submodule "mmengine"]
+	path = mmengine
+	url = https://github.com/huangqj23/mmengine.git
