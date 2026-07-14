@@ -1,0 +1,7 @@
+onnx>=1.13
+onnxruntime>=1.15
+opencv-python
+# Optional: uncomment to enable `export_onnx.py --simplify`
+# onnxsim
+# Optional: for GPU inference with ONNX Runtime, replace onnxruntime with:
+# onnxruntime-gpu>=1.15
