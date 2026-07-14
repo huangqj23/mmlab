@@ -1,0 +1,67 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: verify_onnx",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/deployment/verify_onnx.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/home/ruanzhifeng/anaconda3/envs/mmlab/bin/python",
+      "args": [
+        "mmpretrain/configs/resnet/resnet18_8xb32_in1k.py",
+        "deployment/resnet18_new.onnx",
+        "--checkpoint",
+        "mmpretrain/weights/resnet18_8xb32_in1k_20210831-fbbb1da6.pth",
+        "--img",
+        "mmpretrain/demo/dog.jpg"
+      ]
+    },
+    {
+      "name": "Debug: verify_onnx (random)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/deployment/verify_onnx.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/home/ruanzhifeng/anaconda3/envs/mmlab/bin/python",
+      "args": [
+        "mmpretrain/configs/resnet/resnet18_8xb32_in1k.py",
+        "deployment/resnet18_new.onnx",
+        "--checkpoint",
+        "mmpretrain/weights/resnet18_8xb32_in1k_20210831-fbbb1da6.pth"
+      ]
+    },
+    {
+      "name": "Debug: export_onnx",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/deployment/export_onnx.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/home/ruanzhifeng/anaconda3/envs/mmlab/bin/python",
+      "args": [
+        "mmpretrain/configs/resnet/resnet18_8xb32_in1k.py",
+        "--checkpoint",
+        "mmpretrain/weights/resnet18_8xb32_in1k_20210831-fbbb1da6.pth",
+        "--output",
+        "deployment/resnet18_new.onnx",
+        "--dynamic-batch"
+      ]
+    },
+    {
+      "name": "Debug: current file",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "/home/ruanzhifeng/anaconda3/envs/mmlab/bin/python"
+    }
+  ]
+}
